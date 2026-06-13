@@ -1,0 +1,107 @@
+<hmtl>
+
+
+    <head>
+      <title>Assignment 2 Dog Page</title>
+      <link rel="stylesheet" href="myDog.css" />
+      <script src="//cdnjs.cloudflare.com/ajax/libs/annyang/2.6.1/annyang.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/simple-slider/1.0.0/simpleslider.min.js"></script>
+      <script src="mydog.js"></script>
+    </head>
+     <body>
+      <header id="bar">
+        <h1>Nathan Gomes' INST377 - Dog Acitvites</h1>
+      </header>
+      <nav id="navigation-labels">
+        <ul>
+          <li><a href="myHome.html">Home</a></li>
+          <li><a href="myStocks.html">Stocks</a></li>
+          <li><a href="myDog.html">Dog</a></li>
+        </ul>
+      </nav>
+       <h1> Doggos! 🐶</h1>
+  
+      <div id="dog-slider" style="width:612px; height:612px" data-simple-slider>
+       
+       </div>
+       <br>
+     
+      <div id="dogBreedButtons"></div> 
+     
+      <div id="dogBreedInfo" class="hidden"> 
+        <h2 id="dogBreedName"> </h2>
+     
+        <p id="dogBreedDescription"> </p>
+        <p id="minLifeSpan"> </p>
+        <p id="maxLifeSpan"> </p>
+      </div>
+  
+     
+        <div class="audio-menu">
+          <h1 id="audio-menu-header">
+            In this web page there are options to Navigate using Audio!
+          </h1>
+          <p style="color: white">
+            Ensure your mic is enabled to be able to use this feature
+          </p>
+           <div class="audio-menu-instructions">
+            <ul id="audio-menu-instructions-style">
+              <li id="instructions">Navigate to a different page</li>
+              <li>Say: Navigate to &lt;page&gt; page</li>
+              <li>Change the page color</li>
+              <li>Say: Change the color to &lt;color&gt;</li>
+              <li>Load Dog Breed!</li>
+              <li>Say: Load dog breed &lt;Dog Breed Name&gt;</li>
+            </ul>
+          </div>
+         
+          <script>
+            if (annyang) {
+             
+              const commands = {
+  
+              "Navigate to Home page": () => {
+                window.location.href = "myHome.html";
+              },
+             
+              "Navigate to Dog page": () => {
+                window.location.href = "myDog.html";
+              },
+              "Navigate to Stocks page": () => {
+                window.location.href = "myStocks.html";
+              },
+               
+                "load dog breed *breedName": (breedName) => {
+                  const breedId = breedMap[breedName.toLowerCase()];
+              if (breedId) {
+                fetchBreedDetails(breedId);
+              } else {
+                console.error(`Breed "${breedName}" not found in breedMap.`);
+              }
+             
+            },
+           
+            "hello": () => { alert("Hello World!"); },
+            "change the color to *color": (color) => { document.body.style.backgroundColor = color; },
+          };
+          function turnOn() {
+            annyang.start();
+          }
+       
+          function turnOff() {
+            annyang.abort();
+          }
+       
+            annyang.addCommands(commands);
+        }
+          </script>
+     
+       <button class="button-style" onclick="turnOn(); return false">Turn On Listening</button>
+      <button class="button-style" onclick="turnOff(); return false">Turn Off Listening</button>
+  
+  
+    
+  
+     </body>
+  </hmtl>
+ 

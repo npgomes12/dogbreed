@@ -1,0 +1,132 @@
+<hmtl>
+    <head>
+      <title>Assignment 2 Stocks Page</title>
+      <link rel="stylesheet" href="mystocks.css" />
+      <script src="mystocks.js"></script>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/annyang/2.6.1/annyang.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  
+    </head>
+  
+    <body>
+      <header id="bar">
+        <h1>Nathan Gomes' INST377 - Stocks Activities</h1>
+      </header>
+      <nav id="navigation-labels">
+        <ul>
+          <li><a href="myhome.html">Home</a></li>
+          <li><a href="mystocks.html">Stocks</a></li>
+          <li><a href="mydog.html">Dog</a></li>
+        </ul>
+      </nav>
+  
+      <h1>Lets chart some stocks!</h1>
+  
+      <input type="text" id="stockInput" required/>
+      <br/>
+  
+  
+      <select name="list-of-days" id="list-of-days">
+        <option value="30">30 Days</option>
+        <option value="60">60 Days</option>
+        <option value="90">90 Days</option></select>
+        <br />
+  
+      <button class="button-3" role="button" onclick="populateChart(); return false">Lookup!</button>
+  
+       
+      <div id="chartDiv">
+        <canvas id="myChart"></canvas>
+      </div>
+  
+      
+  
+    
+       <table id="topStocksTable">
+  
+        
+       </table>
+  
+      
+        <div class="audio-menu">
+          <h1 id="audio-menu-header">
+            In this web page there are options to Navigate using Audio!
+          </h1>
+          <p style="color: white">
+            Ensure your mic is enabled to be able to use this feature
+          </p>
+  
+          <div class="audio-menu-instructions">
+            <ul id="audio-menu-instructions-style">
+              <li id="instructions">Navigate to a Different page</li>
+              <li>Say: Navigate to &lt;page&gt; page</li>
+              <li>Change the page color</li>
+              <li>Say: Change the color to &lt;color&gt;</li>
+              <li>Lookup different stocks!</li>
+              <li>Say: Lookup &lt;stock name&gt;</li>
+            </ul>
+          </div>
+          
+          <script>
+  
+  
+  if (annyang) {
+
+    const commands = {
+      hello: () => {
+        alert("Hello world!");
+      },
+  
+      "Navigate to Home page": () => {
+  
+        window.location.href = "myhome.html";
+      },
+  
+      "Navigate to Dog page": () => {
+        window.location.href = "mydog.html";
+      },
+  
+      "Navigate to Stocks page": () => {
+        window.location.href = "mystocks.html";
+      },
+  
+      
+      "Change the color to *color": (color) => {
+        document.body.style.backgroundColor = color;
+      },
+  
+      "Look up *stock": (stock) => {
+        document.getElementById('stockInput').value = stock.toUpperCase();
+        populateChart();
+      },
+    };
+  
+    function turnOn() {
+      annyang.start(); 
+    }
+  
+    function turnOff() {
+      annyang.abort(); 
+    }
+  
+ 
+  annyang.addCommands(commands);
+  }
+  
+  
+  
+  
+          </script>
+      
+  
+      <button class="button-style" onclick="turnOn(); return false">Turn On Listening</button>
+      <button class="button-style" onclick="turnOff(); return false">Turn Off Listening</button>
+  
+  
+  
+  
+  
+  
+    </body>
+  </hmtl>
+  

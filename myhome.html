@@ -1,0 +1,65 @@
+<hmtl>
+  <head>
+    <title>Assignment 2 Home Page</title>
+    <link rel="stylesheet" href="myhome.css" />
+    <script src="//cdnjs.cloudflare.com/ajax/libs/annyang/2.6.1/annyang.min.js"></script>
+    <script src="myhome.js"></script>
+  </head>
+
+  <body>
+    <header id="bar">
+      <h1>Nathan Gomes' INST377 - Activities</h1>
+    </header>
+
+    <nav id="navigation-labels">
+      <ul>
+        <li><a href="myhome.html">Home</a></li>
+        <li><a href="mystocks.html">Stocks</a></li>
+        <li><a href="mydog.html">Dog</a></li>
+      </ul>
+    </nav>
+
+    <div class="main-container">
+      <div class="buttons-container">
+        <button class="button-74" role="button" href="mystocks.html">
+          <a href="mystocks.html">Stocks</a>
+        </button>
+        <button class="button-74" role="button" href="mydog.html">
+          <a href="mydog.html">Dog</a>
+        </button>
+      </div>
+
+      <div class="quote-container">
+        <h1>Quote of the Page Load</h1>
+        <h2 id="random-quote"></h2>
+      </div>
+
+      <div class="audio-menu">
+        <h1 id="audio-menu-header">
+          In this web page there are options to Navigate using Audio!
+        </h1>
+        <p style="color: white">
+          Ensure your mic is enabled to be able to use this feature
+        </p>
+
+        <div class="audio-menu-instructions">
+          <ul id="audio-menu-instructions-style">
+            <li id="instructions">Navigate to a Different page</li>
+            <li>Say: Navigate to &lt;page&gt; page</li>
+            <li>Change the page color</li>
+            <li>Say: Change the color to &lt;color&gt;</li>
+            <li>Say Hello Back to you!</li>
+            <li>Say: Hello</li>
+          </ul>
+        </div>
+
+        <button class="button-style" onclick="turnOn(); return false">
+          Turn On Listening
+        </button>
+        <button class="button-style" onclick="turnOff(); return false">
+          Turn Off Listening
+        </button>
+      </div>
+    </div>
+  </body>
+</hmtl>
