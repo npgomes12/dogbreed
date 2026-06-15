@@ -161,7 +161,6 @@ Look up TSLA
 Look up NVDA
 ```
 
-<img src="images/voice-stock-search.png" width="80%" alt="Voice Stock Search"/>
 
 ---
 
