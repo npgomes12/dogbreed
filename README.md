@@ -146,7 +146,7 @@ The application retrieves stock data from the Polygon API and visualizes closing
 #### View Trending Stocks
 A dynamic table displays trending stocks gathered from ApeWisdom's social sentiment data.
 
-<img src="images/trending-stocks.png" width="80%" alt="Trending Stocks"/>
+<img src="https://i.imgur.com/vg2lNMh.png" width="80%" alt="Trending Stocks"/>
 
 <br />
 
