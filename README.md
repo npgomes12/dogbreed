@@ -126,7 +126,6 @@ Users can enable speech recognition and navigate between pages using voice comma
 - Navigate to Stocks page
 - Change the color to blue
 
-<img src="images/home-voice-controls.png" width="80%" alt="Voice Navigation"/>
 
 ---
 
@@ -135,16 +134,14 @@ Users can enable speech recognition and navigate between pages using voice comma
 #### Search for a Stock
 Users enter a stock ticker symbol and select a time range to retrieve historical stock data.
 
-<img src="images/stocks-search.png" width="80%" alt="Stock Search"/>
+<img src="https://i.imgur.com/GHwRPu1.png" width="80%" alt="Stock Search"/>
 
 <br />
 
 #### Generate Interactive Stock Chart
 The application retrieves stock data from the Polygon API and visualizes closing prices using Chart.js.
 
-<img src="images/stocks-chart.png" width="80%" alt="Stock Chart"/>
 
-<br />
 
 #### View Trending Stocks
 A dynamic table displays trending stocks gathered from ApeWisdom's social sentiment data.
@@ -173,14 +170,13 @@ Look up NVDA
 #### Load Random Dog Images
 The application retrieves random dog images from the Dog CEO API and displays them in an automatic slideshow.
 
-<img src="images/dog-slider.png" width="80%" alt="Dog Slider"/>
+<img src="https://i.imgur.com/yP04g29.jpeg" width="80%" alt="Dog Slider"/>
 
 <br />
 
 #### Browse Dog Breeds
 The system retrieves breed information from the Dog API and dynamically creates breed buttons.
 
-<img src="images/dog-breed-buttons.png" width="80%" alt="Dog Breed Buttons"/>
 
 <br />
 
@@ -192,7 +188,7 @@ Selecting a breed displays detailed information including:
 - Minimum Lifespan
 - Maximum Lifespan
 
-<img src="images/dog-breed-info.png" width="80%" alt="Breed Information"/>
+<img src="https://i.imgur.com/VGLhFaD.png" width="80%" alt="Breed Information"/>
 
 <br />
 
@@ -207,7 +203,6 @@ Load dog breed Golden Retriever
 Load dog breed Labrador Retriever
 ```
 
-<img src="images/voice-dog-search.png" width="80%" alt="Voice Dog Search"/>
 
 ---
 
@@ -230,7 +225,6 @@ Look up AAPL
 Load dog breed Husky
 ```
 
-<img src="images/voice-commands.png" width="80%" alt="Voice Commands"/>
 
 ---
 
