@@ -70,29 +70,6 @@ Users can navigate between pages using traditional controls or voice commands po
 - Responsive Design
 - Event-Driven Programming
 
----
-
-## Project Structure
-
-```
-project/
-│
-├── myhome.html
-├── myhome.css
-├── myhome.js
-│
-├── mystocks.html
-├── mystocks.css
-├── mystocks.js
-│
-├── mydog.html
-├── mydog.css
-├── mydog.js
-│
-└── README.md
-```
-
----
 
 ## Voice Commands
 
