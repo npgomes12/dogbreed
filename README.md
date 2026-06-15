@@ -108,21 +108,129 @@ Load dog breed Husky
 
 ---
 
-## Screenshots
+## Program Walk-Through
 
 ### Home Page
-- Random quote generation
-- Voice command controls
+
+#### Application Landing Page
+The user is greeted with a home page that provides navigation to the Stocks and Dog Explorer pages. A random motivational quote is automatically retrieved from the ZenQuotes API when the page loads.
+
+<img src="https://i.imgur.com/imaVWre.png" width="80%" alt="Home Page"/>
+
+<br />
+
+#### Voice Navigation Controls
+Users can enable speech recognition and navigate between pages using voice commands such as:
+
+- Navigate to Dog page
+- Navigate to Stocks page
+- Change the color to blue
+
+<img src="images/home-voice-controls.png" width="80%" alt="Voice Navigation"/>
+
+---
 
 ### Stocks Dashboard
-- Stock search functionality
-- Historical stock chart visualization
-- Trending stocks table
 
-### Dog Explorer
-- Random dog image slideshow
-- Breed information display
-- Voice-controlled breed search
+#### Search for a Stock
+Users enter a stock ticker symbol and select a time range to retrieve historical stock data.
+
+<img src="images/stocks-search.png" width="80%" alt="Stock Search"/>
+
+<br />
+
+#### Generate Interactive Stock Chart
+The application retrieves stock data from the Polygon API and visualizes closing prices using Chart.js.
+
+<img src="images/stocks-chart.png" width="80%" alt="Stock Chart"/>
+
+<br />
+
+#### View Trending Stocks
+A dynamic table displays trending stocks gathered from ApeWisdom's social sentiment data.
+
+<img src="images/trending-stocks.png" width="80%" alt="Trending Stocks"/>
+
+<br />
+
+#### Voice-Controlled Stock Lookup
+Users can search stocks using voice commands.
+
+Example:
+
+```
+Look up AAPL
+Look up TSLA
+Look up NVDA
+```
+
+<img src="images/voice-stock-search.png" width="80%" alt="Voice Stock Search"/>
+
+---
+
+### Dog Information Explorer
+
+#### Load Random Dog Images
+The application retrieves random dog images from the Dog CEO API and displays them in an automatic slideshow.
+
+<img src="images/dog-slider.png" width="80%" alt="Dog Slider"/>
+
+<br />
+
+#### Browse Dog Breeds
+The system retrieves breed information from the Dog API and dynamically creates breed buttons.
+
+<img src="images/dog-breed-buttons.png" width="80%" alt="Dog Breed Buttons"/>
+
+<br />
+
+#### View Breed Information
+Selecting a breed displays detailed information including:
+
+- Breed Name
+- Description
+- Minimum Lifespan
+- Maximum Lifespan
+
+<img src="images/dog-breed-info.png" width="80%" alt="Breed Information"/>
+
+<br />
+
+#### Voice-Controlled Breed Search
+Users can load breed information through speech recognition.
+
+Example:
+
+```
+Load dog breed Husky
+Load dog breed Golden Retriever
+Load dog breed Labrador Retriever
+```
+
+<img src="images/voice-dog-search.png" width="80%" alt="Voice Dog Search"/>
+
+---
+
+### Voice Recognition System
+
+The application uses the Annyang JavaScript library to provide speech recognition functionality across all pages.
+
+Supported commands include:
+
+```
+Navigate to Home page
+Navigate to Stocks page
+Navigate to Dog page
+
+Change the color to blue
+Change the color to red
+
+Look up AAPL
+
+Load dog breed Husky
+```
+
+<img src="images/voice-commands.png" width="80%" alt="Voice Commands"/>
 
 ---
 
