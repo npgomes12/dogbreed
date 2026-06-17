@@ -10,7 +10,7 @@ The application consists of three interactive pages:
 - Stocks Dashboard
 - Dog Information Explorer
 
-Users can navigate between pages using traditional controls or voice commands powered by the Annyang Speech Recognition library. The application also integrates multiple public APIs to display real-time content and interactive data. :contentReference[oaicite:0]{index=0} :contentReference[oaicite:1]{index=1}
+Users can navigate between pages using traditional controls or voice commands powered by the Annyang Speech Recognition library. The application also integrates multiple public APIs to display real-time content and interactive data.
 
 ---
 
